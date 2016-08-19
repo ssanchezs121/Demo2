@@ -22,6 +22,8 @@ namespace Demo2
 
                 Console.WriteLine("1. Celsius a Fahrenheit");
                 Console.WriteLine("2. Fahrenheit a Celsius");
+                Console.WriteLine("3. Kilometros a Millas");
+                Console.WriteLine("4. Millas a Kilometros");
 
                 string opcion = Console.ReadLine();
 
@@ -33,6 +35,14 @@ namespace Demo2
                 if (opcion == "2")
                 {
                     FtoC();
+                }
+                if (opcion == "3")
+                {
+                    //KmtoMll();
+                }
+                if (opcion == "4")
+                {
+                    MlltoKm();
                 }
 
                 Console.WriteLine("\nSeleccione una opción: ");
@@ -75,8 +85,22 @@ namespace Demo2
             double result = ((Dato1 - 32) * (5.0 / 9.0));
 
             Console.WriteLine("La conversion es :" + result);
-
-
         }
+        static void MlltoKm()
+        {
+            Console.Clear();
+
+            Console.WriteLine("Kilometros a Millas");
+            Console.WriteLine("");
+
+            Console.WriteLine("Ingrese el valor de Millas a convertir: ");
+            double mll = double.Parse(Console.ReadLine());
+
+
+            double resKm = mll * 0.62137;
+
+            Console.WriteLine("El resultado es: " + resKm);
+        }
+
     }
 }
