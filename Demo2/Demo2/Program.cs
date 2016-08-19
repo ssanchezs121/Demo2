@@ -65,13 +65,15 @@ namespace Demo2
 
         static void FtoC()
         {
+            Console.Clear();
+
             Console.Write("Conversion FtoC");
             Console.WriteLine("");
 
             Console.WriteLine("Ingrese un Valor para la Conversion");
             double Dato1 = double.Parse(Console.ReadLine());
 
-            double result = (Dato1 - 32) * (5 / 9);
+            double result = (Dato1 - 32) * (5.0 / 9.0);
 
             Console.WriteLine("La conversion es :" + result);
 
