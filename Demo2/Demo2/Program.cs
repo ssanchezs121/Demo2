@@ -58,7 +58,7 @@ namespace Demo2
             double cels = double.Parse(Console.ReadLine());
             
 
-            double resFahr = (cels*(9/5))+32;
+            double resFahr = (cels*(9.0/5.0))+32;
 
             Console.WriteLine("El resultado es: " + resFahr);
         }
@@ -70,8 +70,7 @@ namespace Demo2
 
             Console.WriteLine("Ingrese un Valor para la Conversion");
             double Dato1 = double.Parse(Console.ReadLine());
-
-            double result = (Dato1 - 32) * (5 / 9);
+            double result = ((Dato1 - 32) * (5.0 / 9.0));
 
             Console.WriteLine("La conversion es :" + result);
 
