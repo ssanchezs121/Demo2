@@ -78,5 +78,22 @@ namespace Demo2
 
 
         }
+
+        static void KmtoMll()
+        {
+            Console.Clear();
+
+            Console.Write("Conversion KmtoMll");
+            Console.WriteLine("");
+
+            Console.WriteLine("Ingrese un Valor para la Conversion");
+            double Dato1 = double.Parse(Console.ReadLine());
+            double result = Dato1 / 0.62137;
+
+            Console.WriteLine("La conversion es :" + result);
+
+
+
+        }
     }
 }
