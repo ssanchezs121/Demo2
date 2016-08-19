@@ -8,8 +8,19 @@ namespace Demo2
 {
     class Program
     {
-        static void Main(string[] args)
+        static void FtoC()
         {
+            Console.Write("Conversion FtoC");
+            Console.WriteLine("");
+
+            Console.WriteLine("Ingrese un Valor para la Conversion");
+            double Dato1 = double.Parse(Console.ReadLine());
+
+            double result = (Dato1-32) * (5/9);
+
+            Console.WriteLine("La conversion es :" + result);
+            
+            
         }
     }
 }
